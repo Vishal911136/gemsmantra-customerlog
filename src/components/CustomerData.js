@@ -54,7 +54,9 @@ export default function CustomerData() {
                                                 <label title='Body Weight'>{user.body_weight}</label>
                                                 <label title='Location'>{user.birth_place}</label>
                                                 <p className='font-semibold border-t-2 mt-auto border-gray-400'>Suggestions: </p>
-                                                <label>Rudraksha - {user.rudraksh[0].name} <br/> Gems - {user.gems[0].name}<br/> Bracelet - {user.bracelet[0].name}, {user.bracelet[1].name}</label>
+                                                <div className='font-semibold text-[#861414]'>
+                                                 <label>Rudraksha - {user.rudraksh[0].name} <br/> Gems - {user.gems[0].name}<br/> Bracelet - {user.bracelet[0].name}, {user.bracelet[1].name}</label>
+                                                </div>
                                         </div>
                                         </>
                                 )
