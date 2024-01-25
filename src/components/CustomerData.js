@@ -40,7 +40,7 @@ export default function CustomerData() {
                 <div className='flex flex-wrap mx-2 my-4 gap-2'>
                 {
                         customerRecord.map((user,index) =>{
-                                let classes = user.gender === "female" ? 'w-64 text-[12px] bg-pink-200 ps-2 p-2 flex flex-col rounded-md shadow-lg border-2 border-pink-500' : 'w-64 text-[12px] bg-teal-200 ps-2 p-2 flex flex-col rounded-md shadow-lg border-2 border-teal-500'; 
+                                let classes = user.gender === "female" ? 'w-60 text-[12px] bg-pink-200 ps-2 p-2 flex flex-col rounded-md shadow-lg border-2 border-pink-500' : 'w-60 text-[12px] bg-teal-200 ps-2 p-2 flex flex-col rounded-md shadow-lg border-2 border-teal-500'; 
                                 return(
                                         <>
                                         <div className={classes} key={index}>
