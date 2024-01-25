@@ -8,7 +8,6 @@ import CustomerLogTable from './components/CustomerLogTable';
 function App() {
 
   return (
-<<<<<<< Updated upstream
     <>
       <HashRouter>
         <Routes>
