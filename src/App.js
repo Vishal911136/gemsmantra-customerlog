@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { HashRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
+import CustomerData from './components/CustomerData';
+import CustomerLog from './components/CustomerLog';
+import CustomerLogTable from './components/CustomerLogTable';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HashRouter>
+        <Routes>
+          <Route exact path="/" element ={<CustomerLog/>} >
+          </Route>
+          <Route exact path="/customer-record/:filename" element ={<CustomerData/>} >
+          </Route>
+          <Route exact path="/download/:filename" element ={<CustomerLogTable/>} >
+          </Route>
+        </Routes>
+      </HashRouter>
+    </>
   );
 }
 
